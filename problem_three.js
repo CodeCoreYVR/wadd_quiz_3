@@ -2,10 +2,15 @@
 //It must return the base number to the power of the exponent.
 //Write one function using **recursion** and a second function using **iteration**. You are not allowed to use the `**` operator nor the `Math.pow` function.
 
+
+//BASE CASE is the key in any recurtive function.
 var power = function(base, exponent) {  
+    //the exposent checked to see if it is zero.
     if (exponent === 0) {
+        // if it is then it return 1.
         return 1;
     } else {
+        // and here the final result returned.
         return base * power(base, exponent - 1);
     }
 }
